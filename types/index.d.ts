@@ -14,3 +14,4 @@ declare const _default: {
     DefaultDeployOptions: IDeployOptions;
 };
 export default _default;
+export { IMulticallInfo, getMulticallInfoList, getMulticallInfo } from './utils';

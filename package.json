@@ -2,6 +2,7 @@
     "name": "@scom/scom-multicall",
     "version": "0.1.0",
     "main": "lib/index.js",
+    "plugin": "dist/index.js",
     "pluginTypes": "pluginTypes/index.d.ts",
     "types": "types/index.d.ts",
     "dependencies": {

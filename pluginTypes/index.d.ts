@@ -87,6 +87,24 @@ declare module "@scom/scom-multicall/contracts/MultiCall.ts" {
 declare module "@scom/scom-multicall/contracts/index.ts" {
     export { MultiCall } from "@scom/scom-multicall/contracts/MultiCall.ts";
 }
+/// <amd-module name="@scom/scom-multicall/utils.ts" />
+declare module "@scom/scom-multicall/utils.ts" {
+    export interface IMulticallInfo {
+        chainId: number;
+        contractAddress: string;
+        gasBuffer: string;
+    }
+    export function getMulticallInfoList(): {
+        chainId: number;
+        contractAddress: string;
+        gasBuffer: string;
+    }[];
+    export function getMulticallInfo(chainId: number): {
+        chainId: number;
+        contractAddress: string;
+        gasBuffer: string;
+    };
+}
 /// <amd-module name="@scom/scom-multicall" />
 declare module "@scom/scom-multicall" {
     import * as Contracts from "@scom/scom-multicall/contracts/index.ts";
@@ -105,4 +123,5 @@ declare module "@scom/scom-multicall" {
         DefaultDeployOptions: IDeployOptions;
     };
     export default _default_1;
+    export { IMulticallInfo, getMulticallInfoList, getMulticallInfo } from "@scom/scom-multicall/utils.ts";
 }

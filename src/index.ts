@@ -24,3 +24,9 @@ export default {
     deploy,
     DefaultDeployOptions
 };
+
+export {
+    IMulticallInfo,
+    getMulticallInfoList,
+    getMulticallInfo
+} from './utils';
