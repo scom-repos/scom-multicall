@@ -23,7 +23,7 @@
     },
     "scripts": {
         "build": "rm -rf lib && rm -rf dist && rm -rf types && rm -rf pluginTypes && npm run build:contracts && npm run build:lib && npm run build:dist && npm run build:deployer",
-        "build:contracts": "rm -rf src/contracts && sol2ts solconfig.json",
+        "build:contracts": "rm -rf src/contracts && npx @ijstech/compiler",
         "build:deployer": "rm -rf deployer && npx @ijstech/cli bundle deployer",
         "build:dist": "npx @ijstech/compiler",
         "build:lib": "tsc",
