@@ -1,5 +1,5 @@
 export interface IMulticallInfo {
-    chainId: number; 
+    chainId: number;
     contractAddress: string;
     gasBuffer: string;
 }
@@ -59,12 +59,17 @@ export function getMulticallInfoList() {
         {
             chainId: 5001,
             contractAddress: '0x78d2856a82ba7037cb98cead2c3990f0e259a26e',
-            gasBuffer: '3000000' 
+            gasBuffer: '3000000'
         },
         {
             chainId: 3441005,
             contractAddress: '0xd026d7d357c97b995fc186e1600099b82dad7c99',
-            gasBuffer: '3000000' 
+            gasBuffer: '3000000'
+        },
+        {
+            chainId: 168587773,
+            contractAddress: '0xd1fe13ee84508ccd1f97df4b15c73cb96134e29c',
+            gasBuffer: '3000000'
         },
     ];
     return list;
