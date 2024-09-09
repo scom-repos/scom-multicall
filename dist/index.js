@@ -158,6 +158,11 @@ define("@scom/scom-multicall/utils.ts", ["require", "exports"], function (requir
                 contractAddress: '0xd1fe13ee84508ccd1f97df4b15c73cb96134e29c',
                 gasBuffer: '3000000'
             },
+            {
+                chainId: 300,
+                contractAddress: '0xadC07aD804Cd88016aE91B087e27e69C9B53bA75',
+                gasBuffer: '3000000'
+            },
         ];
         return list;
     }
