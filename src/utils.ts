@@ -76,6 +76,11 @@ export function getMulticallInfoList() {
             contractAddress: '0xadC07aD804Cd88016aE91B087e27e69C9B53bA75',
             gasBuffer: '3000000'
         },
+        {
+            chainId: 324,
+            contractAddress: '0x69A8ac0b9044cB6F8a1d50Ce8F7BF213E71ecA0C',
+            gasBuffer: '3000000'
+        },
     ];
     return list;
 }
